@@ -55,7 +55,7 @@ function App() {
   function searchPokemon(event: any) {
     let inputValue = event.target.value
 
-    if (inputValue) {
+    if (inputValue && name != "Loading...") {
       setInputValue("")
 
       if (isNaN(inputValue)) {

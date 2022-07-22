@@ -69,17 +69,17 @@ function App() {
   }
 
   useEffect(() => {
-    if (id < 1) {
-      setId(0)
-    } else if (id > 649) {
-      setId(649)
+    let idPokemon = id
+    if (idPokemon < 1) {
+      idPokemon = 1
+    } else if (idPokemon > 649) {
+      idPokemon = 649
     }
-  }, [id, setId])
 
-  useEffect(() => {
+
     setName("Loading...")
     setPokemon("http://portal.ufvjm.edu.br/a-universidade/cursos/grade_curricular_ckan/loading.gif")
-    fetch(url + id).then(async response => {
+    fetch(url + idPokemon).then(async response => {
       let data = await response.json()
 
       setId(data.id)

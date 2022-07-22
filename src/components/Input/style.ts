@@ -1,0 +1,13 @@
+import styled from "styled-components";
+
+export const InputWrapper = styled.input`
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+`

@@ -89,7 +89,7 @@ function App() {
       setName("Not found")
       setPokemon("")
     })
-  }, [id])
+  }, [78])
 
   return (
     <>

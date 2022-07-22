@@ -76,7 +76,6 @@ function App() {
       idPokemon = 649
     }
 
-
     setName("Loading...")
     setPokemon("http://portal.ufvjm.edu.br/a-universidade/cursos/grade_curricular_ckan/loading.gif")
     fetch(url + idPokemon).then(async response => {
